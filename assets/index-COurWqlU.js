@@ -1,1 +1,0 @@
-import{_ as n,c as t,a as s,o as c}from"./index-BaCDfdLt.js";const o="/vue/assets/bigScreen-B82FkK_4.png",r={},a={class:"bigScreen"};function _(i,e){return c(),t("div",a,e[0]||(e[0]=[s("img",{src:o,alt:""},null,-1),s("h3",null,"数字大屏仅展示图片",-1)]))}const d=n(r,[["render",_]]);export{d as default};

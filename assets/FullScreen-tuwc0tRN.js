@@ -1,0 +1,1 @@
+import{_ as s,c as o,o as t,a}from"./index-RKBFIPWT.js";const n={},c={class:"about"};function r(l,e){return t(),o("div",c,e[0]||(e[0]=[a("h1",null,"This is an about page",-1)]))}const i=s(n,[["render",r]]);export{i as default};

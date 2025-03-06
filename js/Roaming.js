@@ -1,4 +1,5 @@
 import * as Cesium from 'cesium';
+Cesium.buildModuleUrl.setBaseUrl('/node_modules/cesium/Build/Cesium/');
 /**
    * @class DEUGlobe.Scene.Roaming
    * @category  场景
