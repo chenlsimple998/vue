@@ -5,7 +5,7 @@
 <script lang="ts" setup>
 import { onMounted, onUnmounted } from 'vue';
 import * as Cesium from 'cesium';
-
+Cesium.buildModuleUrl.setBaseUrl('/node_modules/cesium/Build/Cesium/');
 // 引入 Cesium 的 CSS
 import 'cesium/Build/Cesium/Widgets/widgets.css';
 import smoke from './smoke.png';

@@ -1,4 +1,5 @@
 import * as Cesium from 'cesium';
+Cesium.buildModuleUrl.setBaseUrl('/node_modules/cesium/Build/Cesium/');
 /*
  * @class {MeasureTool} 测量工具
  * @param {viewer} viewer 三维视图
