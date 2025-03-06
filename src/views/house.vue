@@ -49,14 +49,14 @@ onMounted(() => {
     scene.add(axisHelper);
     // begin
     // const textureLoader = new THREE.TextureLoader();
-    // // const texture = textureLoader.load("../../public/image/house/front.png");
+    // // const texture = textureLoader.load("/image/house/front.png");
     // const images = [
-    //   '../../public/image/house/right.png',
-    //   '../../public/image/house/left.png',
-    //   '../../public/image/house/top.png',
-    //   '../../public/image/house/bottom.png',
-    //   '../../public/image/house/back.png',
-    //   '../../public/image/house/front.png',
+    //   '/image/house/right.png',
+    //   '/image/house/left.png',
+    //   '/image/house/top.png',
+    //   '/image/house/bottom.png',
+    //   '/image/house/back.png',
+    //   '/image/house/front.png',
     // ]
     // let matierals: any[] = [];
     // images.forEach((imgUrl) => {
@@ -75,7 +75,7 @@ onMounted(() => {
     // scene.add(cube);
 
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load('../../public/image/house/livingRoom.jpg');
+    const texture = textureLoader.load('/image/house/livingRoom.jpg');
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(16, 32, 32),
       new THREE.MeshBasicMaterial({ map: texture })
@@ -83,7 +83,7 @@ onMounted(() => {
     sphere.geometry.scale(12, 12, -12);
     scene.add(sphere);
 
-    const spriteTexturelogo = textureLoader.load('../../src/assets/logo.jpg');
+    const spriteTexturelogo = textureLoader.load('/src/assets/logo.jpg');
     // 点精灵
     const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: spriteTexturelogo }));
     // const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ color: 0xffffff }));
@@ -147,7 +147,7 @@ onMounted(() => {
       raycaster.setFromCamera(mouse, camera);
       const intersects = raycaster.intersectObject(sprite);
       if (intersects.length) {
-        const changeTexture = textureLoader.load('../../public/image/house/kitchen.jpg');
+        const changeTexture = textureLoader.load('/image/house/kitchen.jpg');
         const changeMaterial = new THREE.MeshBasicMaterial({ map: changeTexture });
         const changeSpriteMaterial = new THREE.SpriteMaterial({ map: spriteTexturelogo });
         sprite.material = changeSpriteMaterial;

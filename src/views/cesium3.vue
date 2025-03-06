@@ -16,7 +16,7 @@ onMounted(() => {
   viewer.scene.debugShowFramesPerSecond = true;
 
   const tileset = new Cesium.Cesium3DTileset({
-    url: "../../public/data/tileset.json",
+    url: "/data/tileset.json",
   });
 
   tileset.readyPromise

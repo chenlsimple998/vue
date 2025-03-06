@@ -11,7 +11,7 @@ onMounted(() => {
   const viewer = new Cesium.Viewer('cesiumContainer', {})
 
   // topoJson
-  const promise = Cesium.GeoJsonDataSource.load('../public/SampleData/ne_10m_us_states.topojson')
+  const promise = Cesium.GeoJsonDataSource.load('/SampleData/ne_10m_us_states.topojson')
   viewer.dataSources.add(promise)
   viewer.zoomTo(promise)
 })

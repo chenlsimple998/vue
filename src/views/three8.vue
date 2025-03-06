@@ -115,13 +115,13 @@ onMounted(() => {
     const gltfLoader = new GLTFLoader();
     gltfLoader.setDRACOLoader(dracoLoader);
 
-    gltfLoader.load('../../public/model/city.glb', (gltf) => {
+    gltfLoader.load('/model/city.glb', (gltf) => {
       console.log('gltf', gltf)
       scene.add(gltf.scene);
     }, (xhr) => {
       // console.log(xhr);
     })
-    gltfLoader.load('../../public/model/Duck.glb', (gltf) => {
+    gltfLoader.load('/model/Duck.glb', (gltf) => {
       console.log('Duck', gltf)
       gltf.scene.scale.set(5, 5, 5);
       scene.add(gltf.scene);

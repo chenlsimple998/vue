@@ -11,7 +11,7 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue';
 import * as Cesium from 'cesium';
-import Roaming from '../../public/js/Roaming';
+import Roaming from './Roaming';
 import obj from './obj.json';
 
 // 定义变量来存储 viewer 和 roaming 实例
@@ -41,7 +41,7 @@ const cameraRoaming = () => {
     });
     roaming.modelRoaming({
       model: {
-        uri: '../../public/data/feiji.glb',
+        uri: '/data/feiji.glb',
         scale: 30,
         silhouetteSize: 5, // 边框大小
         silhouetteColor: Cesium.Color.fromCssColorString("#001aff"), // 边框
