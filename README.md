@@ -43,3 +43,12 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+![测试图片](docs/1.png)
+![测试图片](docs/2.png)
+![测试图片](docs/3.png)
+![测试图片](docs/4.png)
+![测试图片](docs/5.png)
+![测试图片](docs/6.png)
+![测试图片](docs/7.png)
+![测试图片](docs/8.png)
+![测试图片](docs/9.png)
